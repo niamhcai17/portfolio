@@ -367,8 +367,13 @@ body.menu-open {
   width: 72%;
   border-radius: var(--radius);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  transition: top 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              left 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              z-index 0.5s step-end,
+              box-shadow 0.4s ease;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .screenshot--1 {
@@ -473,6 +478,51 @@ body.menu-open {
 
 .about__content p:last-child {
   margin-bottom: 0;
+}
+
+/* Other Projects inside About */
+.about__other-projects {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.about__other-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-sm);
+}
+
+.about__project-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  transition: opacity var(--transition);
+}
+
+.about__project-link:hover {
+  opacity: 0.7;
+}
+
+.about__project-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.about__project-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.about__project-arrow {
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
 /* ========================================

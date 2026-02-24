@@ -115,3 +115,49 @@ document.addEventListener('keydown', (e) => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) closeMenu();
 });
+
+// ========================================
+// Screenshot Cascade — Click to Front
+// ========================================
+document.querySelectorAll('.screenshot-cascade').forEach((cascade) => {
+  const screenshots = cascade.querySelectorAll('.screenshot');
+
+  screenshots.forEach((img) => {
+    img.addEventListener('click', () => {
+      // Find which image currently has --1 (front)
+      const front = cascade.querySelector('.screenshot--1');
+      if (img === front) return;
+
+      // Get the clicked image's current class (--2 or --3)
+      const clickedClass = img.classList.contains('screenshot--2') ? 'screenshot--2' : 'screenshot--3';
+
+      // Swap classes between front and clicked
+      front.classList.remove('screenshot--1');
+      front.classList.add(clickedClass);
+      img.classList.remove(clickedClass);
+      img.classList.add('screenshot--1');
+    });
+  });
+});
+
+// Reset screenshots to original order when card leaves viewport
+const cascadeCards = document.querySelectorAll('.project-card');
+
+const resetObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        const cascade = entry.target.querySelector('.screenshot-cascade');
+        if (!cascade) return;
+        const imgs = cascade.querySelectorAll('.screenshot');
+        imgs.forEach((img, i) => {
+          img.classList.remove('screenshot--1', 'screenshot--2', 'screenshot--3');
+          img.classList.add(`screenshot--${i + 1}`);
+        });
+      }
+    });
+  },
+  { threshold: 0 }
+);
+
+cascadeCards.forEach((card) => resetObserver.observe(card));
