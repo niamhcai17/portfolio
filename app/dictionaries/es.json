@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "course": "Curso"
+  },
+  "hero": {
+    "bio": "Diseño y programo experiencias web — combinando la estructura del project management con la creatividad del diseño para construir cosas con intención."
+  },
+  "projects": [
+    {
+      "category": "Proyecto Personal | Web App",
+      "title": "EnglishGarden",
+      "tags": ["Diseño UI/UX", "Full Stack", "EdTech"],
+      "description": "Una app compañera de lectura para estudiantes de inglés — seguí planes de lectura, subí libros y construí vocabulario con práctica diaria estructurada. Versión 1.0.0"
+    },
+    {
+      "category": "Proyecto Personal | Experiencia Interactiva",
+      "title": "Connect the Dots",
+      "tags": ["Código Creativo", "Animación", "Interactivo"],
+      "description": "Una experiencia interactiva y lúdica de San Valentín — conectá puntos brillantes en un lienzo para revelar un mensaje oculto y una propuesta."
+    },
+    {
+      "category": "Freelance | Landing Page",
+      "title": "Restribo",
+      "tags": ["Diseño Web", "Responsive", "Cliente"],
+      "description": "Una landing page profesional para una consultora de ingeniería estructural — diseñada para transmitir confianza, experiencia y un camino claro hacia sus servicios."
+    }
+  ],
+  "projectCard": {
+    "viewSite": "Ver Sitio en Vivo →"
+  },
+  "contact": {
+    "greeting": "Hola, soy Juli Riveros",
+    "cta": "Trabajemos",
+    "ctaUnderline": "juntos",
+    "subtitle": "¿Tenés un proyecto en mente o simplemente querés saludar? Me encantaría saber de vos."
+  },
+  "footer": {
+    "copy": "© 2026 Juli Riveros. Diseñado y programado con cariño."
+  },
+  "about": {
+    "quote": "Curiosidad ante todo. Investigo, diseño y ejecuto hasta que la complejidad se convierte en claridad.",
+    "scrollHint": "Desplazá hacia abajo",
+    "sectionLabel": "Quién soy",
+    "storyLines": [
+      { "text": "Empecé mi carrera" },
+      { "text": "en project management —" },
+      { "text": "coordinando tiempos," },
+      { "text": "alineando equipos y" },
+      { "text": "asegurando que todo saliera" },
+      { "text": "a tiempo." },
+      { "text": "Pero siempre me atraía", "partial": " más" },
+      { "text": "el lado del diseño:" },
+      { "text": "wireframes, flujos de usuario," },
+      { "text": "cómo se veían y se" },
+      { "text": "sentían las cosas." },
+      { "text": "Así que di el salto." },
+      { "text": "Aprendí sola a diseñar" },
+      { "text": "y programar, y ahora" },
+      { "text": "construyo lo que imagino —" },
+      { "text": "del concepto al producto." }
+    ],
+    "collaborate": "Colaboremos"
+  }
+}

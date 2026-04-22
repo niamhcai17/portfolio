@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "course": "Course"
+  },
+  "hero": {
+    "bio": "I design and code web experiences — bringing structure from project management and creativity from design to build things that feel intentional."
+  },
+  "projects": [
+    {
+      "category": "Personal Project | Web App",
+      "title": "EnglishGarden",
+      "tags": ["UI/UX Design", "Full Stack", "EdTech"],
+      "description": "A reading companion app for English learners — track reading plans, upload books, and build vocabulary through structured daily practice. Version 1.0.0"
+    },
+    {
+      "category": "Personal Project | Interactive Experience",
+      "title": "Connect the Dots",
+      "tags": ["Creative Coding", "Animation", "Interactive"],
+      "description": "A playful, interactive Valentine's experience — connect glowing dots on a canvas to reveal a hidden message and a heartfelt proposal."
+    },
+    {
+      "category": "Freelance | Landing Page",
+      "title": "Restribo",
+      "tags": ["Web Design", "Responsive", "Client Work"],
+      "description": "A professional landing page for a structural engineering consultancy — designed to convey trust, expertise, and a clear path to services."
+    }
+  ],
+  "projectCard": {
+    "viewSite": "View Live Site →"
+  },
+  "contact": {
+    "greeting": "Hello, I'm Juli Riveros",
+    "cta": "Let's work",
+    "ctaUnderline": "together",
+    "subtitle": "Have a project in mind or just want to say hello? I'd love to hear from you."
+  },
+  "footer": {
+    "copy": "© 2026 Juli Riveros. Designed & coded with care."
+  },
+  "about": {
+    "quote": "Curiosity-first. I research, design, and execute until complexity becomes clarity.",
+    "scrollHint": "Scroll Down",
+    "sectionLabel": "Who I am",
+    "storyLines": [
+      { "text": "I started my career" },
+      { "text": "in project management —" },
+      { "text": "coordinating timelines," },
+      { "text": "aligning teams, and making" },
+      { "text": "sure things shipped on time." },
+      { "text": "But I kept gravitating", "partial": " toward" },
+      { "text": "the design side:" },
+      { "text": "wireframes, user flows," },
+      { "text": "how things looked and felt." },
+      { "text": "So I made the leap." },
+      { "text": "I taught myself" },
+      { "text": "to design and code," },
+      { "text": "and now I build the things" },
+      { "text": "I envision — from concept" },
+      { "text": "to deployed product." }
+    ],
+    "collaborate": "Let's collaborate"
+  }
+}
