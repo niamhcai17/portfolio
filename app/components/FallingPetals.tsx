@@ -144,15 +144,11 @@ export default function FallingPetals() {
       timeRef.current += 16;
       const t = timeRef.current / 1000;
 
-      const isMobile = vw < 1024;
-
       if (on) {
-        if (!isMobile) {
-          spawnTimerRef.current += 16;
-          if (fallingRef.current.length < MAX_FALLING && spawnTimerRef.current >= SPAWN_INTERVAL) {
-            fallingRef.current.push(makeFalling(vw));
-            spawnTimerRef.current = 0;
-          }
+        spawnTimerRef.current += 16;
+        if (fallingRef.current.length < MAX_FALLING && spawnTimerRef.current >= SPAWN_INTERVAL) {
+          fallingRef.current.push(makeFalling(vw));
+          spawnTimerRef.current = 0;
         }
 
         groundSpawnTimerRef.current += 16;
