@@ -16,6 +16,34 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: #D5D0C8 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5D0C8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8A8580;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D5D0C8 transparent;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text-primary);

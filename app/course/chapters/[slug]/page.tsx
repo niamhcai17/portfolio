@@ -42,7 +42,7 @@ export default function ChapterPage() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      <article className="w-full max-w-[800px] mx-auto px-8 pt-12 pb-16">
+      <article className="w-full max-w-[800px] mx-auto px-5 lg:px-8 pt-8 lg:pt-12 pb-16">
         {/* Back link */}
         <Link
           href="/course"
@@ -145,14 +145,6 @@ export default function ChapterPage() {
                 PREVIOUS
               </span>
               <span className="text-sm text-text-secondary">No previous chapter</span>
-            </div>
-            <div className="flex flex-col items-end gap-1">
-              <span className="text-xs tracking-[0.02em] text-text-secondary font-medium">
-                NEXT
-              </span>
-              <span className="font-serif text-lg tracking-[-0.01em] text-text-primary">
-                Choosing & Pairing Typefaces →
-              </span>
             </div>
           </div>
         </div>

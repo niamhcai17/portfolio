@@ -154,7 +154,7 @@ export default function ProjectCard({ category, title, tags, description, link, 
                   width={800}
                   height={600}
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  loading="eager"
                   sizes="(max-width: 480px) 65vw, (max-width: 768px) 68vw, (max-width: 1024px) 35vw, 35vw"
                 />
               </div>

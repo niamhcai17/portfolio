@@ -52,16 +52,16 @@ export default function Home() {
 
         <HeroTitle />
 
-        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between px-5 lg:px-[120px] pb-10 lg:pb-[50px] grow basis-0 relative">
+        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between px-5 lg:px-[120px] pt-32 lg:pt-0 pb-10 lg:pb-[50px] grow basis-0 relative">
           <HeroBio />
-          <div className="flex flex-col items-center pt-6 lg:pt-0 pb-[14px] relative">
+          <div className="flex flex-col items-center pt-8 lg:pt-0 pb-[14px] relative">
             <Pill />
           </div>
         </div>
       </section>
 
       {/* Projects */}
-      <div className="flex flex-col pb-16">
+      <div id="projects" className="flex flex-col pb-16">
         {t.projects.map((project, i) => (
           <ProjectCard
             key={project.title}

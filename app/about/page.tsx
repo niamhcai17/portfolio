@@ -14,7 +14,7 @@ export default function About() {
       <Navbar />
 
       {/* Hero quote */}
-      <section className="flex flex-col items-center justify-center h-[580px] lg:h-[772px] px-6 lg:px-8 relative">
+      <section className="flex flex-col items-center justify-center h-[680px] lg:h-[772px] px-6 lg:px-8 relative">
         <p className="font-serif text-xl/[30px] lg:text-[32px] lg:leading-[44px] text-center text-text-primary max-w-[860px]">
           {t.about.quote}
         </p>

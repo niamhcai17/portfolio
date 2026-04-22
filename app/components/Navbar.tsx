@@ -32,7 +32,7 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   const links = [
-    { href: "/", label: t.nav.projects },
+    { href: "/#projects", label: t.nav.projects },
     { href: "/about", label: t.nav.about },
     { href: "/course", label: t.nav.course },
   ];
@@ -55,7 +55,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm tracking-[0.01em] font-medium transition-colors ${
-                  pathname === link.href
+                  (link.href === "/#projects" ? pathname === "/" : pathname === link.href)
                     ? "text-text-primary underline underline-offset-4"
                     : "text-text-secondary hover:text-text-primary"
                 }`}
@@ -66,40 +66,59 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            {!pathname.startsWith("/course") && <LanguageToggle />}
+            <div className={pathname.startsWith("/course") ? "invisible" : ""}>
+              <LanguageToggle />
+            </div>
             <button
-              className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+              className="md:hidden flex items-center justify-center w-8 h-8"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              <span className={`block w-5 h-[1.5px] bg-text-primary transition-transform ${menuOpen ? "rotate-45 translate-y-[4.5px]" : ""}`} />
-              <span className={`block w-5 h-[1.5px] bg-text-primary transition-opacity ${menuOpen ? "opacity-0" : ""}`} />
-              <span className={`block w-5 h-[1.5px] bg-text-primary transition-transform ${menuOpen ? "-rotate-45 -translate-y-[4.5px]" : ""}`} />
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round">
+                <line x1="0" y1="1" x2="18" y2="1" />
+                <line x1="0" y1="8" x2="18" y2="8" />
+                <line x1="0" y1="15" x2="18" y2="15" />
+              </svg>
             </button>
           </div>
         </div>
-
-        {menuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-bg/95 backdrop-blur-sm shadow-[0_1px_0_#0000000F] md:hidden">
-            <div className="flex flex-col items-center gap-6 py-8">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className={`text-sm tracking-[0.01em] font-medium ${
-                    pathname === link.href
-                      ? "text-text-primary underline underline-offset-4"
-                      : "text-text-secondary"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </nav>
+
+      {menuOpen && (
+        <div className="fixed inset-0 z-[60] bg-bg flex flex-col md:hidden">
+          <div className="flex items-center justify-between w-full h-16 px-8">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="font-serif text-2xl tracking-[-0.02em] text-text-primary">
+              Juli.
+            </Link>
+            <button
+              className="flex items-center justify-center w-8 h-8"
+              onClick={() => setMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round">
+                <line x1="1" y1="1" x2="17" y2="17" />
+                <line x1="17" y1="1" x2="1" y2="17" />
+              </svg>
+            </button>
+          </div>
+          <div className="flex flex-col gap-2 px-8 pt-8">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className={`font-serif text-[40px] leading-[52px] tracking-[-0.02em] ${
+                  (link.href === "/#projects" ? pathname === "/" : pathname === link.href)
+                    ? "text-text-primary"
+                    : "text-text-secondary"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </>
   );
 }
