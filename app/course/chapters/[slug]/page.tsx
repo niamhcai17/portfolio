@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "../../../components/Navbar";
 import { CopyIcon } from "../../../components/Icons";
 import { useState } from "react";
+import { useTranslation } from "../../../components/LanguageContext";
 
 function CodeBlock({ label, code }: { label: string; code: string }) {
   const [copied, setCopied] = useState(false);
@@ -38,6 +39,9 @@ function CodeBlock({ label, code }: { label: string; code: string }) {
 }
 
 export default function ChapterPage() {
+  const { t } = useTranslation();
+  const ch = t.chapter01;
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -48,24 +52,24 @@ export default function ChapterPage() {
           href="/course"
           className="text-sm tracking-[0.01em] text-accent-pink font-medium hover:underline"
         >
-          ← Back to Course
+          {ch.backLink}
         </Link>
 
         {/* Header */}
         <div className="flex flex-col gap-5 mt-5">
           <div className="flex flex-col gap-2">
             <p className="text-[11px] tracking-[0.12em] uppercase text-text-secondary font-semibold">
-              Chapter 01
+              {ch.label}
             </p>
             <h1 className="font-serif text-4xl lg:text-[52px] lg:leading-[60px] tracking-[-0.03em] text-text-primary">
-              Understanding Visual Hierarchy
+              {ch.title}
             </h1>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-sm text-text-secondary">April 12, 2026</span>
-            <span className="text-sm text-text-secondary">8 min read</span>
+            <span className="text-sm text-text-secondary">{ch.date}</span>
+            <span className="text-sm text-text-secondary">{ch.readTime}</span>
             <span className="px-3 py-1 rounded-full bg-tag text-tag-text text-[11px] font-medium">
-              Design Fundamentals
+              {ch.category}
             </span>
           </div>
         </div>
@@ -74,64 +78,64 @@ export default function ChapterPage() {
         <div className="flex flex-col gap-10 mt-10">
           <div className="flex flex-col gap-4">
             <p className="text-base leading-7 text-text-body">
-              When I started designing, everything felt flat. I&apos;d place elements on a page and nothing stood out — or everything did. The turning point was understanding that design is about directing attention. Visual hierarchy is how you tell someone where to look first, second, and third.
+              {ch.intro1}
             </p>
             <p className="text-base leading-7 text-text-body">
-              In this chapter, I&apos;ll walk through the core principles I learned and the prompts and tools I used along the way to build my intuition.
+              {ch.intro2}
             </p>
           </div>
 
           <div className="flex flex-col gap-3">
             <h2 className="font-serif text-[28px] leading-[34px] tracking-[-0.02em] text-text-primary">
-              Start with the big question
+              {ch.section1Title}
             </h2>
             <p className="text-base leading-7 text-text-body">
-              Before touching any tool, I asked Claude to help me understand the fundamentals. This single prompt changed how I approach every layout.
+              {ch.section1Text}
             </p>
             <CodeBlock
-              label="Prompt I used"
-              code="Explain visual hierarchy in web design. What are the 3 most important principles a beginner should learn first? Give me real examples I can practice."
+              label={ch.section1CodeLabel}
+              code={ch.section1Code}
             />
           </div>
 
           <div className="flex flex-col gap-3">
             <h2 className="font-serif text-[28px] leading-[34px] tracking-[-0.02em] text-text-primary">
-              Applying contrast to my own layout
+              {ch.section2Title}
             </h2>
             <p className="text-base leading-7 text-text-body">
-              Once I understood the theory, I needed to test it. I opened my portfolio and used this prompt to get a critique of my own hero section.
+              {ch.section2Text}
             </p>
             <CodeBlock
-              label="Prompt I used"
-              code="Review this hero section for visual hierarchy. Is the heading dominant enough? Does the subtitle feel secondary? What would you change to improve the contrast between elements?"
+              label={ch.section2CodeLabel}
+              code={ch.section2Code}
             />
           </div>
 
           <div className="flex flex-col gap-3">
             <h2 className="font-serif text-[28px] leading-[34px] tracking-[-0.02em] text-text-primary">
-              The spacing trick that changed everything
+              {ch.section3Title}
             </h2>
             <p className="text-base leading-7 text-text-body">
-              One thing I kept getting wrong was spacing. Everything was either crammed together or floating in empty space. The breakthrough was learning that spacing creates grouping — elements that are close together feel related, and generous space between groups creates natural separation.
+              {ch.section3Text1}
             </p>
             <p className="text-base leading-7 text-text-body">
-              I started using a simple CSS command to audit my own spacing decisions in the browser:
+              {ch.section3Text2}
             </p>
             <CodeBlock
-              label="Command to inspect spacing"
-              code="* { outline: 1px solid rgba(255, 0, 0, 0.15); }"
+              label={ch.section3CodeLabel}
+              code={ch.section3Code}
             />
           </div>
 
           <div className="flex flex-col gap-3">
             <h2 className="font-serif text-[28px] leading-[34px] tracking-[-0.02em] text-text-primary">
-              What I took away
+              {ch.section4Title}
             </h2>
             <p className="text-base leading-7 text-text-body">
-              Visual hierarchy isn&apos;t about making things bigger or bolder — it&apos;s about making intentional decisions about what matters most. Every element on a page competes for attention. Your job as a designer is to make sure the right things win.
+              {ch.section4Text1}
             </p>
             <p className="text-base leading-7 text-text-body">
-              The three principles I keep coming back to: size creates importance, contrast creates focus, and spacing creates relationships. Once you see it, you can&apos;t unsee it.
+              {ch.section4Text2}
             </p>
           </div>
         </div>
@@ -142,9 +146,9 @@ export default function ChapterPage() {
           <div className="flex items-start justify-between pt-8">
             <div className="flex flex-col gap-1">
               <span className="text-xs tracking-[0.02em] text-text-secondary font-medium">
-                PREVIOUS
+                {ch.navPrevious}
               </span>
-              <span className="text-sm text-text-secondary">No previous chapter</span>
+              <span className="text-sm text-text-secondary">{ch.noPrevious}</span>
             </div>
           </div>
         </div>

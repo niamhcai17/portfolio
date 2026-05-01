@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${instrumentSerif.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
     >
       <body>

@@ -39,6 +39,50 @@
   "footer": {
     "copy": "© 2026 Juli Riveros. Designed & coded with care."
   },
+  "course": {
+    "headerLabel": "My Design Journey",
+    "title": "Learning to Design",
+    "subtitle": "Documenting my step-by-step journey improving my design criteria — from fundamentals to real decisions in real projects.",
+    "chapterLabel": "Chapter",
+    "chapters": [
+      {
+        "slug": "understanding-visual-hierarchy",
+        "number": "01",
+        "category": "Design Fundamentals",
+        "title": "Understanding Visual Hierarchy",
+        "description": "How I learned to guide the eye through a layout — size, contrast, spacing, and the invisible structure behind every good design.",
+        "date": "Apr 2026"
+      }
+    ]
+  },
+  "chapter01": {
+    "backLink": "← Back to Course",
+    "label": "Chapter 01",
+    "title": "Understanding Visual Hierarchy",
+    "date": "April 12, 2026",
+    "readTime": "8 min read",
+    "category": "Design Fundamentals",
+    "intro1": "When I started designing, everything felt flat. I'd place elements on a page and nothing stood out — or everything did. The turning point was understanding that design is about directing attention. Visual hierarchy is how you tell someone where to look first, second, and third.",
+    "intro2": "In this chapter, I'll walk through the core principles I learned and the prompts and tools I used along the way to build my intuition.",
+    "section1Title": "Start with the big question",
+    "section1Text": "Before touching any tool, I asked Claude to help me understand the fundamentals. This single prompt changed how I approach every layout.",
+    "section1CodeLabel": "Prompt I used",
+    "section1Code": "Explain visual hierarchy in web design. What are the 3 most important principles a beginner should learn first? Give me real examples I can practice.",
+    "section2Title": "Applying contrast to my own layout",
+    "section2Text": "Once I understood the theory, I needed to test it. I opened my portfolio and used this prompt to get a critique of my own hero section.",
+    "section2CodeLabel": "Prompt I used",
+    "section2Code": "Review this hero section for visual hierarchy. Is the heading dominant enough? Does the subtitle feel secondary? What would you change to improve the contrast between elements?",
+    "section3Title": "The spacing trick that changed everything",
+    "section3Text1": "One thing I kept getting wrong was spacing. Everything was either crammed together or floating in empty space. The breakthrough was learning that spacing creates grouping — elements that are close together feel related, and generous space between groups creates natural separation.",
+    "section3Text2": "I started using a simple CSS command to audit my own spacing decisions in the browser:",
+    "section3CodeLabel": "Command to inspect spacing",
+    "section3Code": "* { outline: 1px solid rgba(255, 0, 0, 0.15); }",
+    "section4Title": "What I took away",
+    "section4Text1": "Visual hierarchy isn't about making things bigger or bolder — it's about making intentional decisions about what matters most. Every element on a page competes for attention. Your job as a designer is to make sure the right things win.",
+    "section4Text2": "The three principles I keep coming back to: size creates importance, contrast creates focus, and spacing creates relationships. Once you see it, you can't unsee it.",
+    "navPrevious": "PREVIOUS",
+    "noPrevious": "No previous chapter"
+  },
   "about": {
     "quote": "Curiosity-first. I research, design, and execute until complexity becomes clarity.",
     "scrollHint": "Scroll Down",

@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <div className={pathname.startsWith("/course") ? "invisible" : ""}>
+            <div className={pathname.startsWith("/course/chapters") ? "invisible" : ""}>
               <LanguageToggle />
             </div>
             <button

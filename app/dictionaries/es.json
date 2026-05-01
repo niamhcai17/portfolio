@@ -39,6 +39,50 @@
   "footer": {
     "copy": "© 2026 Juli Riveros. Diseñado y programado con cariño."
   },
+  "course": {
+    "headerLabel": "Mi Camino en Diseño",
+    "title": "Aprendiendo a Diseñar",
+    "subtitle": "Documentando mi recorrido paso a paso mejorando mi criterio de diseño — desde los fundamentos hasta decisiones reales en proyectos reales.",
+    "chapterLabel": "Capítulo",
+    "chapters": [
+      {
+        "slug": "understanding-visual-hierarchy",
+        "number": "01",
+        "category": "Fundamentos de Diseño",
+        "title": "Entendiendo la Jerarquía Visual",
+        "description": "Cómo aprendí a guiar la mirada a través de un layout — tamaño, contraste, espaciado y la estructura invisible detrás de todo buen diseño.",
+        "date": "Abr 2026"
+      }
+    ]
+  },
+  "chapter01": {
+    "backLink": "← Volver al Curso",
+    "label": "Capítulo 01",
+    "title": "Entendiendo la Jerarquía Visual",
+    "date": "12 de Abril, 2026",
+    "readTime": "8 min de lectura",
+    "category": "Fundamentos de Diseño",
+    "intro1": "Cuando empecé a diseñar, todo se sentía plano. Colocaba elementos en una página y nada resaltaba — o todo lo hacía. El punto de inflexión fue entender que el diseño se trata de dirigir la atención. La jerarquía visual es cómo le decís a alguien dónde mirar primero, segundo y tercero.",
+    "intro2": "En este capítulo, voy a recorrer los principios fundamentales que aprendí y los prompts y herramientas que usé en el camino para construir mi intuición.",
+    "section1Title": "Empezar con la gran pregunta",
+    "section1Text": "Antes de tocar cualquier herramienta, le pedí a Claude que me ayudara a entender los fundamentos. Este único prompt cambió cómo encaro cada layout.",
+    "section1CodeLabel": "Prompt que usé",
+    "section1Code": "Explicame la jerarquía visual en diseño web. ¿Cuáles son los 3 principios más importantes que un principiante debería aprender primero? Dame ejemplos reales que pueda practicar.",
+    "section2Title": "Aplicando contraste a mi propio layout",
+    "section2Text": "Una vez que entendí la teoría, necesitaba ponerla a prueba. Abrí mi portfolio y usé este prompt para obtener una crítica de mi propia sección hero.",
+    "section2CodeLabel": "Prompt que usé",
+    "section2Code": "Revisá esta sección hero en cuanto a jerarquía visual. ¿El título es lo suficientemente dominante? ¿El subtítulo se siente secundario? ¿Qué cambiarías para mejorar el contraste entre los elementos?",
+    "section3Title": "El truco de espaciado que lo cambió todo",
+    "section3Text1": "Algo que siempre me salía mal era el espaciado. Todo estaba o muy apretado o flotando en el vacío. El descubrimiento fue aprender que el espaciado crea agrupación — los elementos cercanos se sienten relacionados, y un espacio generoso entre grupos crea separación natural.",
+    "section3Text2": "Empecé a usar un comando CSS simple para auditar mis decisiones de espaciado en el navegador:",
+    "section3CodeLabel": "Comando para inspeccionar espaciado",
+    "section3Code": "* { outline: 1px solid rgba(255, 0, 0, 0.15); }",
+    "section4Title": "Lo que me llevé",
+    "section4Text1": "La jerarquía visual no se trata de hacer las cosas más grandes o más negritas — se trata de tomar decisiones intencionales sobre qué es lo más importante. Cada elemento en una página compite por atención. Tu trabajo como diseñador es asegurarte de que las cosas correctas ganen.",
+    "section4Text2": "Los tres principios a los que siempre vuelvo: el tamaño crea importancia, el contraste crea foco, y el espaciado crea relaciones. Una vez que lo ves, no podés dejar de verlo.",
+    "navPrevious": "ANTERIOR",
+    "noPrevious": "No hay capítulo anterior"
+  },
   "about": {
     "quote": "Curiosidad ante todo. Investigo, diseño y ejecuto hasta que la complejidad se convierte en claridad.",
     "scrollHint": "Desplazá hacia abajo",

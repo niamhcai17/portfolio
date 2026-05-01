@@ -1,20 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import { LinkedInIcon, ResumeIcon, MailIcon } from "../components/Icons";
-
-const chapters = [
-  {
-    slug: "understanding-visual-hierarchy",
-    number: "01",
-    category: "Design Fundamentals",
-    title: "Understanding Visual Hierarchy",
-    description:
-      "How I learned to guide the eye through a layout — size, contrast, spacing, and the invisible structure behind every good design.",
-    date: "Apr 2026",
-  },
-];
+import { useTranslation } from "../components/LanguageContext";
 
 export default function Course() {
+  const { t } = useTranslation();
+  const chapters = t.course.chapters;
+
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <Navbar />
@@ -22,13 +16,13 @@ export default function Course() {
       {/* Header */}
       <section className="flex flex-col items-center px-6 lg:px-[120px] pt-10 lg:pt-8 pb-8 lg:pb-6 gap-2.5 lg:gap-3">
         <p className="text-[11px] tracking-[0.12em] uppercase text-text-muted font-semibold">
-          My Design Journey
+          {t.course.headerLabel}
         </p>
         <h1 className="font-serif text-4xl leading-[44px] lg:text-5xl lg:leading-[58px] text-[#2C2C2C]">
-          Learning to Design
+          {t.course.title}
         </h1>
         <p className="text-[13px] leading-5 lg:text-sm lg:leading-[22px] text-text-muted font-normal text-center max-w-[327px] lg:max-w-[480px]">
-          Documenting my step-by-step journey improving my design criteria — from fundamentals to real decisions in real projects.
+          {t.course.subtitle}
         </p>
       </section>
 
@@ -43,7 +37,7 @@ export default function Course() {
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-3">
                 <span className="text-[10px] tracking-[0.1em] uppercase text-text-muted font-semibold">
-                  Chapter {chapter.number}
+                  {t.course.chapterLabel} {chapter.number}
                 </span>
                 <span className="px-[10px] py-1 rounded-full bg-[#3A3A3A] text-tag-text text-[11px] font-medium">
                   {chapter.category}
@@ -73,7 +67,7 @@ export default function Course() {
       {/* Footer */}
       <footer className="flex flex-col items-center gap-4 py-5 px-6 border-t border-[#D5D0C8] lg:flex-row lg:justify-between lg:h-16 lg:py-0 lg:px-[120px]">
         <p className="text-[11px] leading-[14px] text-[#8A8580] lg:text-xs lg:leading-4">
-          © 2026 Juli Riveros. Designed & coded with care.
+          {t.footer.copy}
         </p>
         <div className="flex items-center gap-5 lg:gap-6">
           <a href="http://www.linkedin.com/in/julissariveros" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
