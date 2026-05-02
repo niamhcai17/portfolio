@@ -18,7 +18,7 @@
       "category": "Proyecto Personal | Experiencia Interactiva",
       "title": "Connect the Dots",
       "tags": ["Código Creativo", "Animación", "Interactivo"],
-      "description": "Una experiencia interactiva y lúdica de San Valentín — conectá puntos brillantes en un lienzo para revelar un mensaje oculto y una propuesta."
+      "description": "Una experiencia interactiva y lúdica de San Valentín — conecta puntos brillantes en un lienzo para revelar un mensaje oculto y una propuesta."
     },
     {
       "category": "Freelance | Landing Page",
@@ -34,7 +34,7 @@
     "greeting": "Hola, soy Juli Riveros",
     "cta": "Trabajemos",
     "ctaUnderline": "juntos",
-    "subtitle": "¿Tenés un proyecto en mente o simplemente querés saludar? Me encantaría saber de vos."
+    "subtitle": "¿Tienes un proyecto en mente o simplemente quieres saludar? Me encantaría saber de ti."
   },
   "footer": {
     "copy": "© 2026 Juli Riveros. Diseñado y programado con cariño."
@@ -62,16 +62,16 @@
     "date": "12 de Abril, 2026",
     "readTime": "8 min de lectura",
     "category": "Fundamentos de Diseño",
-    "intro1": "Cuando empecé a diseñar, todo se sentía plano. Colocaba elementos en una página y nada resaltaba — o todo lo hacía. El punto de inflexión fue entender que el diseño se trata de dirigir la atención. La jerarquía visual es cómo le decís a alguien dónde mirar primero, segundo y tercero.",
+    "intro1": "Cuando empecé a diseñar, todo se sentía plano. Colocaba elementos en una página y nada resaltaba — o todo lo hacía. El punto de inflexión fue entender que el diseño se trata de dirigir la atención. La jerarquía visual es cómo le dices a alguien dónde mirar primero, segundo y tercero.",
     "intro2": "En este capítulo, voy a recorrer los principios fundamentales que aprendí y los prompts y herramientas que usé en el camino para construir mi intuición.",
     "section1Title": "Empezar con la gran pregunta",
     "section1Text": "Antes de tocar cualquier herramienta, le pedí a Claude que me ayudara a entender los fundamentos. Este único prompt cambió cómo encaro cada layout.",
     "section1CodeLabel": "Prompt que usé",
-    "section1Code": "Explicame la jerarquía visual en diseño web. ¿Cuáles son los 3 principios más importantes que un principiante debería aprender primero? Dame ejemplos reales que pueda practicar.",
+    "section1Code": "Explícame la jerarquía visual en diseño web. ¿Cuáles son los 3 principios más importantes que un principiante debería aprender primero? Dame ejemplos reales que pueda practicar.",
     "section2Title": "Aplicando contraste a mi propio layout",
     "section2Text": "Una vez que entendí la teoría, necesitaba ponerla a prueba. Abrí mi portfolio y usé este prompt para obtener una crítica de mi propia sección hero.",
     "section2CodeLabel": "Prompt que usé",
-    "section2Code": "Revisá esta sección hero en cuanto a jerarquía visual. ¿El título es lo suficientemente dominante? ¿El subtítulo se siente secundario? ¿Qué cambiarías para mejorar el contraste entre los elementos?",
+    "section2Code": "Revisa esta sección hero en cuanto a jerarquía visual. ¿El título es lo suficientemente dominante? ¿El subtítulo se siente secundario? ¿Qué cambiarías para mejorar el contraste entre los elementos?",
     "section3Title": "El truco de espaciado que lo cambió todo",
     "section3Text1": "Algo que siempre me salía mal era el espaciado. Todo estaba o muy apretado o flotando en el vacío. El descubrimiento fue aprender que el espaciado crea agrupación — los elementos cercanos se sienten relacionados, y un espacio generoso entre grupos crea separación natural.",
     "section3Text2": "Empecé a usar un comando CSS simple para auditar mis decisiones de espaciado en el navegador:",
@@ -79,13 +79,13 @@
     "section3Code": "* { outline: 1px solid rgba(255, 0, 0, 0.15); }",
     "section4Title": "Lo que me llevé",
     "section4Text1": "La jerarquía visual no se trata de hacer las cosas más grandes o más negritas — se trata de tomar decisiones intencionales sobre qué es lo más importante. Cada elemento en una página compite por atención. Tu trabajo como diseñador es asegurarte de que las cosas correctas ganen.",
-    "section4Text2": "Los tres principios a los que siempre vuelvo: el tamaño crea importancia, el contraste crea foco, y el espaciado crea relaciones. Una vez que lo ves, no podés dejar de verlo.",
+    "section4Text2": "Los tres principios a los que siempre vuelvo: el tamaño crea importancia, el contraste crea foco, y el espaciado crea relaciones. Una vez que lo ves, no puedes dejar de verlo.",
     "navPrevious": "ANTERIOR",
     "noPrevious": "No hay capítulo anterior"
   },
   "about": {
     "quote": "Curiosidad ante todo. Investigo, diseño y ejecuto hasta que la complejidad se convierte en claridad.",
-    "scrollHint": "Desplazá hacia abajo",
+    "scrollHint": "Desplaza hacia abajo",
     "sectionLabel": "Quién soy",
     "storyLines": [
       { "text": "Empecé mi carrera" },

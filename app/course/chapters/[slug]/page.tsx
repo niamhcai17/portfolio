@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Navbar from "../../../components/Navbar";
 import { CopyIcon } from "../../../components/Icons";
 import { useState } from "react";
 import { useTranslation } from "../../../components/LanguageContext";
@@ -44,8 +43,6 @@ export default function ChapterPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
-
       <article className="w-full max-w-[800px] mx-auto px-5 lg:px-8 pt-8 lg:pt-12 pb-16">
         {/* Back link */}
         <Link
