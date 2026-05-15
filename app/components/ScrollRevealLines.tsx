@@ -34,24 +34,28 @@ export default function ScrollRevealLines({ lines }: { lines: Line[] }) {
 
   return (
     <div ref={containerRef} className="flex flex-col max-w-[1120px]">
-      {lines.map((line, i) => (
-        <div key={i} className="flex flex-wrap">
-          <span
-            data-reveal
-            className="font-serif text-4xl lg:text-[66px] lg:leading-[88px] text-white/15 transition-colors duration-700 ease-out"
-          >
-            {line.text}
-          </span>
-          {line.partial && (
+      {lines.map((line, i) =>
+        line.text === "" ? (
+          <div key={i} className="h-8 lg:h-12" />
+        ) : (
+          <div key={i} className="flex flex-wrap">
             <span
               data-reveal
               className="font-serif text-4xl lg:text-[66px] lg:leading-[88px] text-white/15 transition-colors duration-700 ease-out"
             >
-              {line.partial}
+              {line.text}
             </span>
-          )}
-        </div>
-      ))}
+            {line.partial && (
+              <span
+                data-reveal
+                className="font-serif text-4xl lg:text-[66px] lg:leading-[88px] text-white/15 transition-colors duration-700 ease-out"
+              >
+                {line.partial}
+              </span>
+            )}
+          </div>
+        )
+      )}
     </div>
   );
 }
